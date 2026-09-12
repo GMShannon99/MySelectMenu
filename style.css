@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #000000;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#topbar {
+  flex: 0 0 auto;
+  padding: 36px 24px 8px;
+  text-align: center;
+}
+
+#site-title {
+  margin: 0 0 4px;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+#stage {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 24px 64px;
+}
+
+.menu-grid {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 56px;
+}
+
+/* ---------- Menu icons ---------- */
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease;
+}
+
+.menu-card:hover,
+.menu-card:focus-visible {
+  transform: translateY(-4px);
+}
+
+.menu-icon {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  transition: filter 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.menu-photo {
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.menu-card:hover .menu-photo,
+.menu-card:focus-visible .menu-photo {
+  filter: brightness(1.15);
+  box-shadow: 0 8px 28px rgba(255, 255, 255, 0.25);
+}
+
+.menu-frame {
+  background: transparent;
+  border: 2px solid #ffffff;
+}
+
+.menu-card:hover .menu-frame,
+.menu-card:focus-visible .menu-frame {
+  border-color: #ffffff;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+}
+
+.menu-caption {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  #site-title {
+    font-size: 24px;
+  }
+
+  .menu-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .menu-card {
+    width: 260px;
+  }
+}
