@@ -77,7 +77,7 @@ html, body {
 
 .menu-photo {
   object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.12);
 }
 
 .menu-card:hover .menu-photo,
@@ -93,7 +93,6 @@ html, body {
 
 .menu-card:hover .menu-frame,
 .menu-card:focus-visible .menu-frame {
-  border-color: #ffffff;
   box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
 }
 
