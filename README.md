@@ -10,6 +10,8 @@ https://gmshannon99.github.io/MySelectMenu/.
 - `index.html` - the entire app; a static two-icon menu, no JS.
 - `style.css` - layout and hover/focus styling for the menu cards.
 - `assets/main-cover.jpg` - the book's cover photo, used as its menu icon.
+- `assets/old-movie-camera-icon.jpg` - the old movie camera icon, used as
+  the family movies menu icon.
 - `assets/favicon.svg` / `assets/favicon.ico` - a black/white outline
   favicon matching the site's theme.
 
@@ -20,7 +22,7 @@ no shared framework or client-side router between this menu and the two
 destinations, just full-page browser navigation:
 
 - Book cover -> [GES-OldBW-Book](https://gmshannon99.github.io/GES-OldBW-Book/)
-- Frame icon -> [FamilyOldMovies](https://gmshannon99.github.io/FamilyOldMovies/)
+- Movie camera icon -> [FamilyOldMovies](https://gmshannon99.github.io/FamilyOldMovies/)
 
 Both destination apps link back here (`https://gmshannon99.github.io/MySelectMenu/`)
 via their own exit actions, the same way - `window.location.href`, not
